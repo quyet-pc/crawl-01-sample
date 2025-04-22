@@ -1,0 +1,4 @@
+INSERT INTO authors (name)
+VALUES (%s)
+ON CONFLICT (name) DO NOTHING
+RETURNING id;
